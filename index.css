@@ -1,0 +1,151 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./src/assets/fonts/fonts/Manrope-Regular.woff2') format('woff2'),
+            url('./src/assets/fonts/fonts/Manrope-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./src/assets/fonts/fonts/Manrope-ExtraBold.woff2') format('woff2'),
+            url('./src/assets/fonts/fonts/Manrope-ExtraBold.woff') format('woff');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./src/assets/fonts/fonts/Manrope-Bold.woff2') format('woff2'),
+            url('./src/assets/fonts/fonts/Manrope-Bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./src/assets/fonts/fonts/Manrope-SemiBold.woff2') format('woff2'),
+            url('./src/assets/fonts/fonts/Manrope-SemiBold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./src/assets/fonts/fonts/Manrope-Regular.woff2') format('woff2'),
+            url('./src/assets/fonts/fonts/Manrope-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'manrope';
+        src: url('./src/assets/fonts/fonts/Manrope-Medium.woff2') format('woff2'),
+            url('./src/assets/fonts/fonts/Manrope-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'manrope-light';
+        src: url('./src/assets/fonts/fonts/Manrope-Light.woff2') format('woff2'),
+            url('./src/assets/fonts/fonts/Manrope-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+/* *{
+    letter-spacing: 1px;
+} */
+.instagram li:hover .instagram-hover{
+    display: flex;
+    cursor: pointer;
+} 
+.seller-box:hover p:last-child{
+    color: #DD1B1E;
+}
+.box:hover .box-img{
+    background-color: #F9F9F9;
+}
+.box:hover .box-detail p:last-child{
+    color: #DD1B1E;
+}
+.custom-carosel .swiper{
+    padding-bottom: 42px;
+}
+.custom-carosel2 .swiper-pagination{
+    display: none;
+}
+.custom-carosel .swiper-pagination{
+    bottom: 0;
+}
+.custom-carosel .swiper-pagination span{
+    width: 12px;
+    height: 12px;
+    background: #BDBDBD;
+    opacity: 1;
+}
+.custom-carosel .swiper-pagination span.swiper-pagination-bullet-active{
+    background: #DD1B1E;
+}
+.swiper-button-prev{
+    width: 60px;
+    left: -8px;
+}
+.swiper-button-next{
+    width: 60px;
+    right: -8px;
+}
+.swiper-button-prev:after{
+    background: url(./src/assets/image/left.png);
+    font-family: none;
+    background-repeat: no-repeat;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    max-width: 60px;
+    font-size: 0;
+}
+.swiper-button-next:after{
+    background: url(./src/assets/image/right.png);
+    font-family: none;
+    background-repeat: no-repeat;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    max-width: 60px;
+    font-size: 0;
+}
+@media(max-width: 1024px){
+    .w-container-width{width: 100%;overflow: hidden;}
+}
+@media(max-width: 1780px){
+    .w-container-width{max-width: 85%;}
+}
+@media(min-width: 1400px) and (max-width: 1780px){
+    .product-listing-inner .box{width: 17.217%;}
+    .brand .brand-inner{width:22.9%}
+}
+/* @media(max-width: 1599px){
+    .w-container-width{max-width: 1400px;}
+}
+@media(max-width: 1500px){
+    .w-container-width{max-width: 1300px;}
+} */
+@media(max-width: 1399px){
+    .w-container-width{max-width: 1150px;}
+}
+
